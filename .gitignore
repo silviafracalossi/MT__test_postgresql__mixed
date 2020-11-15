@@ -3,3 +3,5 @@ build/*
 resources/*
 desktop.ini
 logs/*
+.classpath
+.project
