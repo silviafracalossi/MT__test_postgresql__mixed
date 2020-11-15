@@ -34,15 +34,15 @@ do
   echo "Ingestion completed!"
   echo ""
   #
-  # == Executing Ingestion Part ([l/s] [dbName] [data_file_name] [log_folder] [1/2/3])
+  # == Executing Ingestion Part ([l/s] [dbName] [data_file_name] [log_folder] [0/1/2])
   echo "Executing IngestionMixed.jar ..."
   nohup bash ing__compile_and_run.bash $1 $2 ${full_data} $folder $index > "logs/${folder}/extra/out__ingestion.txt" 2> "logs/${folder}/extra/err__ingestion.txt" &
   # nohup java -jar standalone/IngestionMixed.jar $1 $2 ${full_data} $folder $index > "logs/${folder}/extra/out__ingestion.txt" 2> "logs/${folder}/extra/err__ingestion.txt" &
   #
-  # == Executing Querying Part ([l/s] [dbName] [log_folder])
+  # == Executing Querying Part ([l/s] [dbName] [log_folder] [0/1/2])
   echo "Executing QueryingMixed.jar ..."
-  #nohup bash query__compile_and_run.bash $1 $2 $folder > "logs/${folder}/extra/out__querying.txt" 2> "logs/${folder}/extra/err__querying.txt" &
-  #nohup java -jar standalone/QueryingMixed.jar $1 $2 $folder > "logs/${folder}/extra/out__querying.txt" 2> "logs/${folder}/extra/err__querying.txt" &
+  #nohup bash query__compile_and_run.bash $1 $2 $folder $index > "logs/${folder}/extra/out__querying.txt" 2> "logs/${folder}/extra/err__querying.txt" &
+  #nohup java -jar standalone/QueryingMixed.jar $1 $2 $folder $index > "logs/${folder}/extra/out__querying.txt" 2> "logs/${folder}/extra/err__querying.txt" &
   #
   # == Waiting 2 hours
   echo "Sleeping 2 hours..."
