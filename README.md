@@ -31,6 +31,7 @@ Tester of the PostgreSQL ability of ingesting and querying time series data at t
     -   Execute `mkdir postgresql/standalone_mixed/data`;
 -   Send the JAR and the help files from another terminal (not connected through SSH):
     -   Execute `scp standalone/NDataIngestionTest.jar sfracalossi@ironlady.inf.unibz.it:/data/sfracalossi/postgresql/standalone_mixed/standalone`;
+    -   Execute `scp standalone/IndexChanger.jar sfracalossi@ironlady.inf.unibz.it:/data/sfracalossi/postgresql/standalone_mixed/standalone`;
     -   Execute `scp standalone/IngestionMixed.jar sfracalossi@ironlady.inf.unibz.it:/data/sfracalossi/postgresql/standalone_mixed/standalone`;
     -   Execute `scp standalone/QueryingMixed.jar sfracalossi@ironlady.inf.unibz.it:/data/sfracalossi/postgresql/standalone_mixed/standalone`;
     -   Execute `scp resources/server_postgresql_credentials.txt sfracalossi@ironmaiden.inf.unibz.it:/data/sfracalossi/postgresql/standalone_mixed/resources`;

@@ -100,12 +100,9 @@ public class Main {
             logger.info("Starting queries execution");
             while(true) {
               dbi.lastTwoDays_timedMovingAverage();
-              dbi.lastThirtyMinutes_avgMaxMin();
-              dbi.lastThirtyMinutes_avgMaxMin();
-              dbi.lastThirtyMinutes_avgMaxMin();
-              dbi.lastThirtyMinutes_avgMaxMin();
-              dbi.lastThirtyMinutes_avgMaxMin();
-              dbi.lastThirtyMinutes_avgMaxMin();
+              for (int i=0; i<80; i++) {
+                dbi.lastThirtyMinutes_avgMaxMin();
+              }
             }
         } catch (Exception e) {
             e.printStackTrace();
