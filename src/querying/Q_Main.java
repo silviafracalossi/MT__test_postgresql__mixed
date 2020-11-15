@@ -2,12 +2,9 @@ import java.io.*;
 import java.sql.*;
 import java.util.Scanner;
 import java.util.logging.*;
-import java.sql.Timestamp;
-import java.util.Date;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Main {
+public class Q_Main {
 
     // Store users' configurations - default settings written here
     static boolean useServerPostgresDB = false;
@@ -37,7 +34,7 @@ public class Main {
     static Statement pos_stmt = null;
 
     // Creating the database interactor
-    static DatabaseInteractions dbi;
+    static Q_DatabaseInteractions dbi;
 
     public static void main(String[] args) {
 
@@ -74,7 +71,7 @@ public class Main {
 
             // Loading the credentials to the new database
             logger.info("Instantiating database interactor");
-            dbi = new DatabaseInteractions(dbName, logger);
+            dbi = new Q_DatabaseInteractions(dbName, logger);
 
             // Marking start of tests
             logger.info("---Start of Tests!---");

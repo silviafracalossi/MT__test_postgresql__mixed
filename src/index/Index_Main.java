@@ -7,7 +7,7 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Main {
+public class Index_Main {
 
   // DB variables
   static Connection pos_conn;

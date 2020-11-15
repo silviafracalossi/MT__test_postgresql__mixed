@@ -1,10 +1,8 @@
-import java.io.*;
 import java.sql.*;
-import java.util.Scanner;
 import java.util.logging.*;
 import java.text.*;
 
-public class DatabaseInteractions {
+public class Q_DatabaseInteractions {
 
   // DB variables
   static Connection pos_conn;
@@ -22,7 +20,7 @@ public class DatabaseInteractions {
 
 
   // Class that handles the insertion configurations
-  public DatabaseInteractions (String dbName, Logger logger) {
+  public Q_DatabaseInteractions (String dbName, Logger logger) {
     this.DB_TABLE_NAME=dbName;
     this.logger=logger;
   }

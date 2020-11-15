@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.*;
 import java.text.*;
 
-public class DatabaseInteractions {
+public class Ing_DatabaseInteractions {
 
   // DB variables
   static Connection pos_conn;
@@ -19,7 +19,7 @@ public class DatabaseInteractions {
 
 
   // Class that handles the insertion configurations
-  public DatabaseInteractions (String dbName, String data_file_path) {
+  public Ing_DatabaseInteractions (String dbName, String data_file_path) {
     this.dbName=dbName;
     this.data_file_path=data_file_path;
   }
